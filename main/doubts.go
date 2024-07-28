@@ -18,9 +18,7 @@ func main(){
     fmt.Printf("\n")
 
     fmt.Printf("hex bytes: ")
-	// for _,k:=range placeOfInterest{
-	// 	fmt.Printf("%x ",k)
-	// }
+	
 	
     for i := 0; i < len(placeOfInterest); i++ {
         fmt.Printf("%x ", placeOfInterest[i])
@@ -36,9 +34,9 @@ if p := strings.Index(s, cafe); p != -1 {
 }
 fmt.Println(s)
 
-	// var buffer [10]byte
-	// for _,val:=range buffer{
-	// 	fmt.Println(val)
-	// }
+	var buffer [10]byte
+	for _,val:=range buffer{
+		fmt.Println(val)
+	}
 	
 }
