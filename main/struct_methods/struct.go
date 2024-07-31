@@ -1,4 +1,4 @@
-package main
+package structss
 import(
 	"fmt"
 )
@@ -26,7 +26,7 @@ return struct {
 
 	}
 
-func main(){
+func Structs(){
 	p1:=person{
 		sno:1,
 		first:"riya",

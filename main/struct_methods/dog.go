@@ -1,4 +1,4 @@
-package main
+package structss
 import(
 	"fmt"
 )
@@ -17,7 +17,7 @@ func (d *dog) run(){
 	fmt.Println("I am  ",d.name," and I am running")
 }
 
-func main(){
+func Structss(){
 	d1:=dog{
 		name:"shiro",
 	}

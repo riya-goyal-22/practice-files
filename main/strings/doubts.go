@@ -1,10 +1,10 @@
-package main
+package strings
 import(
 	"fmt"
 	// "strconv"
 	"strings"
 )
-func main(){
+func Strings(){
 	var r rune='😁'
 	fmt.Printf("%v\t %T\n",r,r)  //gives unicode value for 😁
 	var placeOfInterest string= `❤️`

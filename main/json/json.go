@@ -1,4 +1,4 @@
-package main
+package json
 import (
 	"fmt"
 	"encoding/json"
@@ -10,7 +10,7 @@ type person struct{
 	Age int
 }
 
-func main(){
+func JSON(){
 	p1:=person{
 		First:"mickey",
 		Last:"mouse",
@@ -46,6 +46,7 @@ func unmarshal(data []byte,people1 []person){
 	fmt.Println(people1)
 	for i,v:=range people1{
 		fmt.Println("person no ",i+1)
-		fmt.Println(v.First,v.Last,v.Age)
+		var x=fmt.Println(v.First,v.Last,v.Age)
+		
 	}
 }

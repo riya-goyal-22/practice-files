@@ -3,6 +3,10 @@ import (
 	"fmt"
 	"os"
 	"runtime"
+	"encoding/json"
+	// "module/main/struct_methods"
+	// "module/main/pointers"
+	"module/main/new_make"
 	// "github.com/riya-goyal-22/humans"
 	// "module/calculator"
 	// "dogs"
@@ -48,9 +52,30 @@ func main(){
     gopath := os.Getenv("GOPATH")
     fmt.Println("GOPATH:", gopath)
 	fmt.Println("GOROOT:", runtime.GOROOT())
-
+	//Example()
+	// structss.Structs()
+	// pointerss
+	dynamic.Dynamic()
 	
 }
 func(p Person) speak(){
 	fmt.Println("I am ",p.name)
+}
+
+type Internship struct{
+	First string
+	Last string
+	College string
+	Age int
+}
+
+func Example(){
+	i1:=Internship{
+		First:"riya",
+		Last:"goyal",
+		College:"JECRC",
+		Age:20,
+	}
+	data,_:=json.Marshal(i1)
+	fmt.Println(string(data))
 }

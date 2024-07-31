@@ -30,7 +30,7 @@ func ReadFile(filename string)[]byte{
 	return databytes
 }
 
-func main(){
+func File(){
 	fmt.Println("::::::::Files in Golang:::::::::")
 	content:="Shelly sells seashells on the sea shore. She sells seashells near the sea on sunday"
 	var file_name string
